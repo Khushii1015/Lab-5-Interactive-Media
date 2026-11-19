@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hometown Soundscape</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Toronto</h1>
+<p>Press play, click a photo to jump to that scene, and hover over the video to play it.</p>
+
+<audio id="soundscape" src="my-soundscape/soundscape.m4a"></audio>
+
+<div class="controls">
+<button id="playBtn">Play</button>
+<input id="seek" type="range" min="0" max="100" value="0">
+<span id="time">0:00</span>
+<label for="volume">Volume</label>
+<input id="volume" type="range" min="0" max="1" step="0.01" value="1">
+</div>
+
+<canvas id="visualizer" width="800" height="200"></canvas>
+
+<div class="gallery">
+<img src="img1.jpg" alt="A view of the CN Tower from a park near by" data-time="0">
+<img src="img2.jpg" alt="A view of the CN Tower between other buildings" data-time="20">
+<img src="img3.jpg" alt="Union Station on a non busy train day" data-time="40">
+<img src="img4.jpg" alt="A winter scene in High Park" data-time="60">
+</div>
+
+<video id="clip" src="clip.mp4" muted loop></video>
+
+<script src="script.js"></script>
+</body>
+</html>

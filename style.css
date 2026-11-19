@@ -1,0 +1,58 @@
+body {
+  font-family: "Times New Roman", Times, serif;
+  background: #111;
+  color: #eee;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+}
+
+button, label {
+  font-family: inherit;
+  font-size: 16px;
+}
+
+button {
+  padding: 6px 16px;
+  cursor: pointer;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+canvas {
+  width: 100%;
+  max-width: 800px;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.gallery img {
+  width: 180px;
+  height: 120px;
+  object-fit: cover;
+  opacity: 0.4;
+  cursor: pointer;
+  transition: opacity 0.5s;
+}
+
+.gallery img.active {
+  opacity: 1;
+  transform: scale(var(--pulse, 1));
+}
+
+video {
+  width: 100%;
+  max-width: 600px;
+}
